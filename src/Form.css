@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 226, 152);
+    height: 30rem;
+ 
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 9px;
+    color: rgb(3, 2, 1);
+}
+
+.user {
+    height: 70vh;
+    padding: 5rem 2rem;
+    width: 100vw;
+    background-color: black;
+    color: rgb(228, 200, 139);
+ display: flex;
+}
+
+.add{
+    margin-left: 8rem;
+}
+
+.words {
+    color: white;
+    position: relative;
+    left: 60rem;
+    top:-20rem;
+}
+
+button {
+    width: 8rem;
+    height: 2rem;
+}
+
+.gap {
+    margin: 2rem;
+}
+
+input {
+    height: 2rem;
+}
