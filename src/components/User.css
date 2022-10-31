@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.use{
+.use {
     background-color: #b35631;
     margin: 2rem 0.5rem;
     height: 15rem;
@@ -22,12 +22,12 @@
     width: 100%;
 }
 
-.bu{
+.bu {
     padding-top: 3rem;
     font-weight: 900;
 }
 
-.big{
+.big {
     background-image: linear-gradient(to top, #807478 0%, #222124 100%);
 
 }
