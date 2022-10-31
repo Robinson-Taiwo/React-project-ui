@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Products.css"
 
 const Products = () => {
 
     const [container, setContainer] = useState([])
 
-    fetch('https://fakestoreapi.com/products?limit=12')
+    fetch('https://fakestoreapi.com/products?limit=30')
         .then(res => res.json())
 
         .then(data => {
             setContainer(data)
         })
         .catch(err => { console.error(err) })
+
+
+    
 
 
     // console.log(container)
@@ -21,10 +24,10 @@ const Products = () => {
             <h1>check out our products</h1>
             <div className="top">
                 <select name="category" id="select">
-                    <option value="">category</option>
-                    <option value="">category</option>
-                    <option value="">category</option>
-                    <option value="">category</option>
+                    <option value="" >Electronic</option>
+                    <option value="jewelery" >jewelery</option>
+                    <option value="">men's clothing</option>
+                    <option value="">women's clothing</option>
                 </select>
                 <input type="text" placeholder='search' />
             </div>
@@ -36,13 +39,12 @@ const Products = () => {
               return  <div className='item' key={data.id}> 
 
               <img className='pics' src={data.image} alt="all" />
-              <li> {data.title} </li>
+              <li> <span>Title:</span> {data.title} </li>
 
               {/* <li> {data.description} </li> */}
 
-              <li> {data.price} </li>
-              <li>rate: {data.rating.rate} count:{data.rating.count} </li>
-              <li> {data.category} </li>
+              <li>  <span>Price:</span> {data.price} </li>
+              <li><span>Rate:</span> {data.rating.rate} count:{data.rating.count} </li>
 
                </div>
             })}

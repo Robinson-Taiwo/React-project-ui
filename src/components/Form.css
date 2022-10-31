@@ -1,8 +1,9 @@
 .form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 226, 152);
+    background-image: linear-gradient(to top, #4c4547 0%, #674abd 100%);
     height: 30rem;
+    margin-left: 5rem;
  
     width: 30rem;
     padding: 1rem;
@@ -13,7 +14,7 @@
 .user {
     height: 70vh;
     padding: 5rem 2rem;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     color: rgb(228, 200, 139);
  display: flex;
@@ -37,8 +38,21 @@ button {
 
 .gap {
     margin: 2rem;
+    font-weight: 400;
 }
 
 input {
     height: 2rem;
+    margin-left: 6px;
+    border-radius: 7px;
+}
+
+form button{
+    width: 8.5rem;
+    height: 14rem;
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 7px;
 }

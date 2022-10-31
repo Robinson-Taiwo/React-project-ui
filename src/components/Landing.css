@@ -1,13 +1,13 @@
 .main {
     height: 100vh;
-    width: 100vw;
-    background-image: url(./images/stars.jpg);
+    width: 100%;
+    background-image: url(../images/stars.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -38,6 +38,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+nav a:hover{
+    color: aqua;
 }
 
 .head {
@@ -73,7 +77,7 @@ header {
     border-radius: 50%;
     top: 3rem;
     left: 22rem;
-    background-image: url(./images/wrist.jpg);
+    background-image: url(../images/wrist.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -87,7 +91,7 @@ header {
     border-radius: 50%;
     left: 18rem;
     top: -15rem;
-    background-image: url(./images/watch.jpg);
+    background-image: url(../images/watch.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -102,7 +106,7 @@ header {
     border-radius: 50%;
     top: -2em;
     left: 15rem;
-    background-image: url(./images/artificial-photography-vB5qtt8X4NA-unsplash.jpg);
+    background-image: url(../images/artificial-photography-vB5qtt8X4NA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -117,7 +121,7 @@ header {
     border-radius: 50%;
     top: 10rem;
     left: -20rem;
-    background-image: url(./images/jon-ly-Xn7GvimQrk8-unsplash.jpg);
+    background-image: url(../images/jon-ly-Xn7GvimQrk8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
@@ -129,11 +133,11 @@ header {
 
 
 
-nav{
+nav {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
     padding: 0 1rem;
     color: white;

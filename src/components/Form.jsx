@@ -19,15 +19,25 @@ const Form = () => {
         .then(json => console.log(json))
 
 
+const handle=(e)=>{
+e.preventDefault()
+return console.log( "clicked", e.target)
+}
+
     return (
-        <section className='user'>
-            <form className='form'>
+        <section className='user' id='user'>
+            <form className='form' onSubmit={handle}>
                 <h2 className='add'>Add products</h2>
                 <span className='gap'>Title:<input type="text" name='title' required />  </span>
                 <span className='gap'> Price: <input type="text" name='price' required />  </span>
-                <span className='gap'> category: <input type="text" name='category' required /> </span>
+                <span className='gap'> category: <select name="category2" id="">
+                <option value="">category</option>
+                    <option value="">category</option>
+                    <option value="">category</option>
+                    <option value="">category</option>
+                    </select> </span>
                 <span className='gap'> image: <input type="file" required /> </span>
-                <button>Add product</button>
+                <button type='submit' >Add product</button>
 
                 <section className="words">
                     <h1>ADD YOUR PRODUCT WITH EASE</h1>

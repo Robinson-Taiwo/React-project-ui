@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Landing from './Landing'
-import Products from './Products'
-import Form from './Form'
+import Landing from './components/Landing'
+import Products from './components/Products'
+import Form from './components/Form'
 
 const App = () => {
 
