@@ -1,7 +1,7 @@
 .all {
     height: auto;
     width: 100wv;
-    background-color: rgb(32, 28, 28);
+    background-color: #5f5f5c;
 }
 
 .top {
@@ -57,10 +57,12 @@ h1 {
 
     background-color: #dacfd2;
     margin: 2rem 1rem;
-    height: 18rem;
+    height: fit-content;
     width: 12rem;
     padding: 1rem;
     border-radius: 7px;
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.90), 0 6px 20px 0 rgba(0, 0, 0, 0.90);
+
 }
 
 .pics {

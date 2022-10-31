@@ -1,35 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import "./User.css"
 
 const User = () => {
-    const [users, setUsers] = useState([])
-
+    const [person, setPerson] = useState([])
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/users')
+        fetch('https://fakestoreapi.com/users?limit=4')
             .then(res => res.json())
-            .then(json => console.log(json))
-            .then(data => setUsers(data))
+            .then((data) => {
+                setPerson(data)
+            })
+            .catch((error) => console.log(error));
     }, []
     )
 
     return (
-        <div className='user'>
-            {users.map((user) => {
-                return (
-                    <div>
-                        <div>{user.name.firstname} {user.name.lastname}</div>
-                        <div>{user.email}</div>
-                        <div>{user.phone}</div>
-                        <div>{user.username}</div>
 
-                    </div>
-                )
+        <section className='user-1' id='workers'>
+<h1 className='big'>SEE SOME OF OUR WORKERS DETAILS</h1>
 
+<div className="rep">
+{person.map((data) => {
+                return <div className='use' key={data.id}>
+                    <li className='bu'> <span >USERNAME:</span> {data.username} </li>
+                    <li className='bu'>  <span>FULL NAME:</span> {data.name.firstname} {data.name.lastname}  </li>
+                    <li className='bu'> <span>E-MAIL:</span> {data.email} </li>
 
+                </div>
             })}
 
+</div>
 
-        </div>
+            
+
+        </section>
+
+
+
+
+
+
     )
 }
 

@@ -1,3 +1,33 @@
-.user {
+.user-1 {
     height: 50vh;
+    background-color: #1b1918;
+    width: 100%;
+}
+
+.use{
+    background-color: #b35631;
+    margin: 2rem 0.5rem;
+    height: 15rem;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rep {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0rem;
+    width: 100%;
+}
+
+.bu{
+    padding-top: 3rem;
+    font-weight: 900;
+}
+
+.big{
+    background-image: linear-gradient(to top, #807478 0%, #222124 100%);
+
 }

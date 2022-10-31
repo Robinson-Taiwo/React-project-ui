@@ -30,7 +30,7 @@ const Form = () => {
 
 
     return (
-        <section className='user' id='user'>
+        <section className='user' id='form'>
             <form className='form' onSubmit={handle}>
                 <h2 className='add'>Add products</h2>
                 <span className='gap'>Title:<input type="text" name='title' required />  </span>
@@ -45,7 +45,8 @@ const Form = () => {
                 <button type='submit' >Add product</button>
 
                 <section className="words">
-                    <h1>ADD YOUR PRODUCT WITH EASE</h1>
+                    <h1 className='color'>ADD YOUR PRODUCT WITH EASE</h1>
+                    <p>There's no need for stress. do it in one goal</p>
 
                 </section>
 

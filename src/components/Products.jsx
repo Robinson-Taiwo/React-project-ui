@@ -4,13 +4,15 @@ import "./Products.css"
 const Products = () => {
 
     const [container, setContainer] = useState([])
+    // const [person, setPerson] = useState([])
+
 
 
 
 
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products?limit=30').then((res) => res.json())
+        fetch('https://fakestoreapi.com/products?limit=8').then((res) => res.json())
             .then((data) => {
                 setContainer(data)
             })
@@ -18,7 +20,6 @@ const Products = () => {
     }, []
 
     )
-
 
     return (
         <section className='all' id='products' >

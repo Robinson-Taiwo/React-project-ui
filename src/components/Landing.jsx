@@ -13,8 +13,8 @@ const Landing = () => {
 
                 <nav >
                     <a href='#products'>products</a>
-                    <a href='/'>Add products</a>
-                    <a href='#user'>See users</a>
+                    <a href='#form'>Add products</a>
+                    <a href='#workers'>See users</a>
                 </nav>
 
             </header>
