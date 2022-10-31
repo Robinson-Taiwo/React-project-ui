@@ -4,7 +4,6 @@ import "./Products.css"
 const Products = () => {
 
     const [container, setContainer] = useState([])
-    // const [person, setPerson] = useState([])
 
 
 
