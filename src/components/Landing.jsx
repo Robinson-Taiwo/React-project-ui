@@ -8,13 +8,13 @@ const Landing = () => {
             <header>
 
                 <div>
-                    logo
+                    <a href="/" id="logo"> <i className="fa-solid fa-fire-flame-curved"></i> ShopperWeb</a>
                 </div>
 
                 <nav >
                     <a href='#products'>products</a>
-                    <a href='/'>Add products</a>                  
-                    <a href='#user'>See users</a> 
+                    <a href='/'>Add products</a>
+                    <a href='#user'>See users</a>
                 </nav>
 
             </header>

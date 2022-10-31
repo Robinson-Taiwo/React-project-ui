@@ -3,26 +3,31 @@ import "./Form.css"
 
 const Form = () => {
 
-    fetch('https://fakestoreapi.com/products', {
-        method: "POST",
-        body: JSON.stringify(
-            {
-                title: 'test product',
-                price: 13.5,
-                description: 'lorem ipsum set',
-                image: 'https://i.pravatar.cc',
-                category: 'electronic'
-            }
-        )
-    })
-        .then(res => res.json())
-        .then(json => console.log(json))
 
 
-const handle=(e)=>{
-e.preventDefault()
-return console.log( "clicked", e.target)
-}
+    const handle = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        console.log(form.img.value, form.title.value);
+        const newProductData = {
+            title: form.title.value,
+            price: form.price.value,
+            description: form.description.value,
+            category: 'electronic',
+        };
+
+        fetch('https://fakestoreapi.com/products', {
+            method: "POST",
+            body: JSON.stringify(newProductData),
+        })
+            .then(res => res.json())
+            .then(json => console.log(json))
+
+    }
+
+
+
+
 
     return (
         <section className='user' id='user'>
@@ -31,11 +36,11 @@ return console.log( "clicked", e.target)
                 <span className='gap'>Title:<input type="text" name='title' required />  </span>
                 <span className='gap'> Price: <input type="text" name='price' required />  </span>
                 <span className='gap'> category: <select name="category2" id="">
-                <option value="">category</option>
                     <option value="">category</option>
                     <option value="">category</option>
                     <option value="">category</option>
-                    </select> </span>
+                    <option value="">category</option>
+                </select> </span>
                 <span className='gap'> image: <input type="file" required /> </span>
                 <button type='submit' >Add product</button>
 

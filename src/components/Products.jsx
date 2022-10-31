@@ -5,19 +5,20 @@ const Products = () => {
 
     const [container, setContainer] = useState([])
 
-    fetch('https://fakestoreapi.com/products?limit=30')
-        .then(res => res.json())
-
-        .then(data => {
-            setContainer(data)
-        })
-        .catch(err => { console.error(err) })
 
 
-    
 
 
-    // console.log(container)
+    useEffect(() => {
+        fetch('https://fakestoreapi.com/products?limit=30').then((res) => res.json())
+            .then((data) => {
+                setContainer(data)
+            })
+            .catch((error) => console.log(error));
+    }, []
+
+    )
+
 
     return (
         <section className='all' id='products' >
@@ -33,23 +34,23 @@ const Products = () => {
             </div>
 
 
-<div className="card">
+            <div className="card">
 
-            { container.map( (data) =>{
-              return  <div className='item' key={data.id}> 
+                {container.map((data) => {
+                    return <div className='item' key={data.id}>
 
-              <img className='pics' src={data.image} alt="all" />
-              <li> <span>Title:</span> {data.title} </li>
+                        <img className='pics' src={data.image} alt="all" />
+                        <li> <span>Title:</span> {data.title} </li>
 
-              {/* <li> {data.description} </li> */}
+                        {/* <li> {data.description} </li> */}
 
-              <li>  <span>Price:</span> {data.price} </li>
-              <li><span>Rate:</span> {data.rating.rate} count:{data.rating.count} </li>
+                        <li>  <span>Price:</span> {data.price} </li>
+                        <li><span>Rate:</span> {data.rating.rate} count:{data.rating.count} </li>
 
-               </div>
-            })}
+                    </div>
+                })}
 
-</div>
+            </div>
 
 
         </section>

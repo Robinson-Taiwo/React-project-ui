@@ -11,10 +11,25 @@
     scroll-behavior: smooth;
 }
 
+#logo {
+    background-color: #ff8187;
+    background-image: linear-gradient(to top, #082dff 0%, #f516ab 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
     height: 4rem;
     color: rgb(236, 234, 231);
     align-items: center;
@@ -40,7 +55,7 @@ header {
     align-items: center;
 }
 
-nav a:hover{
+nav a:hover {
     color: aqua;
 }
 
