@@ -63,3 +63,39 @@ form button {
     background-image: linear-gradient(to top, #a84a91 0%, #9d92c7 100%);
 
 }
+
+@media all  and (max-width: 571px) {
+
+    #form{
+        height: 90vh;
+        padding: 1rem 1rem;
+        width: 100%;
+        background-color: #3b3b39;
+        color: rgb(228, 200, 139);
+        display: flex;
+        flex-direction: column-;
+    }
+
+    .form {
+        height: 35rem;
+        padding: 5rem 2rem;
+        width: 80%;
+        color: rgb(228, 200, 139);
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .words {
+        position:relative;
+        top: 0%;
+        left: 0%;
+    }
+
+    .color{
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+}
+

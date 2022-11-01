@@ -31,3 +31,36 @@
     background-image: linear-gradient(to top, #807478 0%, #222124 100%);
 
 }
+
+@media all  and (max-width: 571px) {
+.big{
+    font-size: 3rem;
+    padding-left: 1em;
+    margin-top: 1rem;
+}
+
+.rep {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem;
+    width: 100%;
+
+}
+
+.use{
+    background-color: #b35631;
+    margin: 2rem 0.5rem;
+    height: 15rem;
+    width: 16rem;
+    padding: 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.user-1 {
+    height: 80vh;
+    background-color: #1b1918;
+    width: 100%;
+}
+}

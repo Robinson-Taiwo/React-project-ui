@@ -22,7 +22,7 @@ const Products = () => {
 
     return (
         <section className='all' id='products' >
-            <h1>check out our products</h1>
+            <h1 className='k'>check out our products</h1>
             <div className="top">
                 <select name="category" id="select">
                     <option value="" >Electronic</option>

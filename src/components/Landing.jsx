@@ -25,6 +25,7 @@ const Landing = () => {
                     <h1 className='head'>WELCOME TO </h1>
                     <h2 className='title'>SHOPPER WEB</h2>
                     <p>We satisfy all your needs...</p>
+                    <button className='but'>Explore</button>
                 </section>
 
                 <section className="second">

@@ -73,3 +73,22 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+@media all  and (max-width: 571px) {
+
+    .all {
+        height: auto;
+        width: 100wv;
+        background-color: #5f5f5c;
+    }
+
+.k{
+    font-size: 3rem;
+}
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}

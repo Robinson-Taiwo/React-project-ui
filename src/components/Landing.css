@@ -55,6 +55,18 @@ header {
     align-items: center;
 }
 
+.but{
+    margin-top: 1rem;
+    background-color: #807478;
+    border-radius: 9px;
+
+}
+
+.but:hover{
+    color: aliceblue;
+    background-color: #141416;
+}
+
 nav a:hover {
     color: rgb(82, 83, 83);
 }
@@ -156,4 +168,102 @@ a {
     text-decoration: none;
     padding: 0 1rem;
     color: white;
+}
+
+@media all  and (max-width: 571px) {
+
+   .main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/stars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+   }
+
+   header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    color: rgb(236, 234, 231);
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+   .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+   header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    color: rgb(236, 234, 231);
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    padding-top: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    font-size: 2.5rem;
+}
+.title{
+font-size: 1.9rem;
+}
+
+.second {
+background-color: red;
+height: 0%;
+width: 0%;
+}
+
+
+.img1 {
+opacity:0;   
+}
+
+.img2 {
+    opacity:0;   
+
+
+    border-radius: 50%;
+    background-image: url(../images/watch.jpg);
+ 
+
+}
+
+.img3 {
+    opacity:0;   
+
+    background-image: url(../images/artificial-photography-vB5qtt8X4NA-unsplash.jpg);
+   
+
+}
+
+.img4 {
+    opacity:0;   
+
+    border-radius: 50%;
+    background-image: url(../images/jon-ly-Xn7GvimQrk8-unsplash.jpg);
+ 
+}
+
+
 }
