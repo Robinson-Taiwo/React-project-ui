@@ -32,7 +32,7 @@
 
 }
 
-@media all  and (max-width: 571px) {
+@media all  and (max-width: 600px) {
 .big{
     font-size: 3rem;
     padding-left: 1em;

@@ -170,7 +170,7 @@ a {
     color: white;
 }
 
-@media all  and (max-width: 571px) {
+@media all  and (max-width: 600px) {
 
    .main{
     height: 100vh;

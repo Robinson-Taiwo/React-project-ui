@@ -74,7 +74,7 @@ h1 {
     justify-content: center;
 }
 
-@media all  and (max-width: 571px) {
+@media all  and (max-width: 600px) {
 
     .all {
         height: auto;
