@@ -64,7 +64,7 @@ form button {
 
 }
 
-@media all  and (max-width: 800px) {
+@media all  and (max-width: 796px) {
 
     #form{
         height: 90vh;
